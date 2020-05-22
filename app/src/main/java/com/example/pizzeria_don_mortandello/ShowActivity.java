@@ -7,9 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Log;
 
-import com.example.pizzeria_don_mortandello.data.DAOPizza;
+import com.example.pizzeria_don_mortandello.model.PizzaModel;
 import com.example.pizzeria_don_mortandello.view.PizzaViewAdapter;
 
 public class ShowActivity extends AppCompatActivity{

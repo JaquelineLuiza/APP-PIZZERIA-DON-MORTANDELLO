@@ -3,7 +3,7 @@ package com.example.pizzeria_don_mortandello.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class PizzaModel implements Parcelable {
+public class PizzaModel implements Comparable<PizzaModel>,Parcelable {
 
     private String nome;
     private String preco;
@@ -76,5 +76,10 @@ public class PizzaModel implements Parcelable {
                 ", preco='" + preco + '\'' +
                 ", ingredientes='" + ingredientes + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(PizzaModel o) {
+        return this.getNome().toUpperCase().compareTo(o.getNome().toUpperCase());
     }
 }

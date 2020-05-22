@@ -3,13 +3,16 @@ package com.example.pizzeria_don_mortandello.data;
 import com.example.pizzeria_don_mortandello.model.PizzaModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class DAOPizza {//Singleton
     private ArrayList<PizzaModel> pizzas;
     private static DAOPizza INSTANCE;
 
     private DAOPizza(){//Construtor
-        pizzas = new ArrayList<>();
+        this.pizzas = new ArrayList<>();
+        DummyData.generatePizzas(this.pizzas);
+        Collections.sort(this.pizzas);
     }
 
     public static DAOPizza getINSTANCE(){

@@ -36,4 +36,6 @@ public class InsertActivity extends AppCompatActivity {
         DAOPizza.getINSTANCE().addPizza(p);
         finish();
     }
+
+
 }
