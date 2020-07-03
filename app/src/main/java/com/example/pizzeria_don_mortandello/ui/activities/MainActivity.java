@@ -1,10 +1,12 @@
-package com.example.pizzeria_don_mortandello;
+package com.example.pizzeria_don_mortandello.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pizzeria_don_mortandello.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,8 +24,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void onClickList(View view){
+            Intent intent = new Intent(this, PizzaActivity.class);
+            startActivity(intent);
+        }
 
-            Intent intent = new Intent(this, ShowActivity.class);
+        public void onClickPromocao(View view){
+            Intent intent = new Intent(this, PromocaoActivity.class);
             startActivity(intent);
         }
 }

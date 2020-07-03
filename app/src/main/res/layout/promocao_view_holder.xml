@@ -17,25 +17,20 @@
 
 
         <TextView
-            android:id="@+id/txtNome"
-            android:layout_width="180dp"
-            android:layout_height="42dp"
+            android:id="@+id/txtPromocao"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10px"
             android:layout_weight="1"
             android:text="Nome"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/txtPreco"
+        <ImageView
+            android:id="@+id/imgEye"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="10px"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/border_button"
-            android:gravity="center_horizontal"
-            android:text="Preço"
-            android:textColor="@android:color/background_light"
-            android:textSize="18sp" />
+            android:background="@drawable/ic_baseline_remove_red_eye_24" />
 
     </LinearLayout>
 
@@ -47,11 +42,11 @@
         android:visibility="visible">
 
         <TextView
-            android:id="@+id/txtIngredientes"
+            android:id="@+id/txtInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Pizza"
+            android:text="Pizzas"
             android:textSize="24sp"
             android:visibility="gone" />
     </ScrollView>

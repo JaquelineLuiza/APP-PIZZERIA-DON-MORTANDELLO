@@ -24,6 +24,7 @@ public class DAOPizza {//Singleton
 
     public void addPizza(PizzaModel p) {
         pizzas.add(p);
+        Collections.sort(this.pizzas);
     }
 
     public ArrayList<PizzaModel> getPizzas(){

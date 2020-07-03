@@ -1,4 +1,4 @@
-package com.example.pizzeria_don_mortandello.view;
+package com.example.pizzeria_don_mortandello.ui.list_adapters;
 
 import android.view.View;
 import android.widget.TextView;
@@ -21,12 +21,11 @@ public class PizzasViewHolder extends RecyclerView.ViewHolder{
         txtNome = itemView.findViewById(R.id.txtNome);
         txtPreco = itemView.findViewById(R.id.txtPreco);
         txtIngredientes = itemView.findViewById(R.id.txtIngredientes);
-
     }
 
     public void bind(PizzaModel p){
         txtNome.setText(p.getNome());
-        txtPreco.setText(p.getPreco());
+        txtPreco.setText("R$" + p.getPreco());
         txtIngredientes.setText(p.getIngredientes());
         this.pizza = p;
     }

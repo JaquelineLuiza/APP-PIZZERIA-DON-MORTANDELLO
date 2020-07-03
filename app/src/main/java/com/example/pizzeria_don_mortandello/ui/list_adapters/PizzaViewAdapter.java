@@ -1,4 +1,4 @@
-package com.example.pizzeria_don_mortandello.view;
+package com.example.pizzeria_don_mortandello.ui.list_adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pizzeria_don_mortandello.R;
-import com.example.pizzeria_don_mortandello.data.DAOPizza;
 import com.example.pizzeria_don_mortandello.model.PizzaModel;
 
 import java.util.ArrayList;
@@ -19,8 +18,8 @@ public class PizzaViewAdapter extends RecyclerView.Adapter<PizzasViewHolder> {
     private ArrayList<PizzaModel> pizzalist;
     private PizzaModel pizzaModel;
 
-    public PizzaViewAdapter() {
-        pizzalist = DAOPizza.getINSTANCE().getPizzas();
+    public PizzaViewAdapter(ArrayList<PizzaModel> pizza) {
+        this.pizzalist = pizza;
     }
 
     @NonNull

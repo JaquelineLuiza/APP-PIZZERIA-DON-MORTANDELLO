@@ -3,7 +3,9 @@ package com.example.pizzeria_don_mortandello.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class PizzaModel implements Comparable<PizzaModel>,Parcelable {
+import java.io.Serializable;
+
+public class PizzaModel implements Comparable<PizzaModel>,Parcelable, Serializable {
 
     private String nome;
     private String preco;
